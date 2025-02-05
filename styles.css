@@ -1,0 +1,85 @@
+#external-style {
+    color: blue;
+    font-weight: bold;
+}
+
+.parent {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background: lightgray;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.float-container {
+    overflow: hidden;
+}
+
+.float-left {
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.float-text {
+    overflow: hidden;
+}
+
+.radio-button {
+    accent-color: green;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.first { background-color: blue; order: 1; }
+.red { background-color: red; order: 2; }
+.green { background-color: green; order: 3; }
+.second { background-color: blue; order: 4; }
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .fixed-box {
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }
+}
