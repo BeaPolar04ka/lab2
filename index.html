@@ -1,46 +1,54 @@
-<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна робота №2</title>
     <link rel="stylesheet" href="styles.css">
+
     <style>
-        /* Вбудований стиль */
-        .inline-style {
-            color: red;
-            font-size: 20px;
+        /* Стиль в секции <style> */
+        .floating-box {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            float: left;
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
 
-    <h1 class="inline-style">Вбудований стиль</h1>
-    
-    <p id="external-style">Цей текст оформлений через зовнішній CSS-файл.</p>
+    <h1 style="color: darkblue; text-align: center;">Лабораторна робота №2</h1> <!-- Inline-стиль -->
 
-    <div class="parent">
-        <div class="relative-box">Відносне позиціонування</div>
-        <div class="absolute-box">Абсолютне позиціонування</div>
+    <div class="checkbox-container">
+        <input type="checkbox" id="cb1">
+        <label for="cb1">Checkbox 1</label>
+
+        <input type="checkbox" id="cb2">
+        <label for="cb2">Checkbox 2</label>
+
+        <input type="checkbox" id="cb3">
+        <label for="cb3">Checkbox 3</label>
     </div>
-    <div class="fixed-box">Фіксоване позиціонування</div>
-
-    <div class="float-container">
-        <img src="image.jpg" class="float-left" alt="Картинка">
-        <p class="float-text">Текст, що обтікає картинку.</p>
-    </div>
-
-    <form>
-        <label><input type="radio" name="toggle" class="radio-button"> Опція 1</label>
-        <label><input type="radio" name="toggle" class="radio-button"> Опція 2</label>
-    </form>
 
     <div class="flex-container">
-        <div class="item blue first">3</div>
-        <div class="item red">4</div>
-        <div class="item green">1</div>
-        <div class="item blue second">2</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box large">9</div>
     </div>
+
+    <div id="positioned-box">Абсолют</div>
+
+    <img src="image.png" alt="Обтекаемое изображение" class="floating-box">
+<div class="text-container">
+    <p>Це приклад тексту, який обтікає зображення.</p>
+</div>
 
 </body>
 </html>
