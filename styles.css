@@ -4,7 +4,6 @@ body {
     text-align: center;
 }
 
-/* Чекбоксы */
 .checkbox-container {
     display: flex;
     justify-content: center;
@@ -29,7 +28,6 @@ body {
     color: white;
 }
 
-/* Flexbox контейнер */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -64,11 +62,10 @@ body {
 }
 
 .text-container {
-    max-width: 600px; /* Ограничиваем ширину текста */
-    text-align: left;  /* Выравниваем по левому краю */
+    max-width: 600px; 
+    text-align: left; 
 }
 
-/* Абсолютное позиционирование */
 #positioned-box {
     position: absolute;
     top: 20px;
